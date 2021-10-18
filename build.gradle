@@ -9,6 +9,7 @@
 plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
+    id "com.diffplug.spotless" version "5.17.0"
 }
 
 repositories {
@@ -26,4 +27,8 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
+    
+	// https://mvnrepository.com/artifact/org.pcap4j/pcap4j-core
+	implementation group: 'org.pcap4j', name: 'pcap4j-core', version: '1.8.2'
+
 }
